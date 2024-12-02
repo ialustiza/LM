@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilos de encabezado y navegacion*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    font-size: 2.2em;
+    background-color: rgb(216, 111, 216);
+    height: 4em;
+}
+
+nav img {
+    height: 4em;
+    width: 8em;
+    align-items: flex-start;
+}
+
+nav ul{
+    flex-basis: 60%;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2.6em;
+}
+
+/* Estilos del main para receta y noticias */
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25em;
+}
+
+main p{
+    font-size: 1.8em;
+}
+
+section {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0.5em;
+}
+
+section article{
+    display: inline-block;
+}
+
+section img {
+    width: 15.625em;
+    height: 12,5em;
+    margin: 0.2em;
+}
+
+/* Propiedades de titulos, imagenes y boton */
+.mini-titulos{
+    font-size: 2em;
+    width: 100%;
+    color:  rgb(216, 111, 216);
+}
+
+.imgleft{
+    float: left;
+}
+
+.imgrigth{
+    float: right;
+}
+
+.fin-float {
+	clear: both;
+}
+
+article button{
+	float: left;
+    border-radius: 0.25em;
+    border-color: greenyellow;
+    font-size: 1.2em;
+}
+
+/* Estilos del listado de recetas/tecnicas, imagenes, listas y formulario */
+.main-listado {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-listado {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0.5em;
+}
+
+.section-noticias {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0.8em;
+}
+
+.img-receta{
+    flex-basis: 100%;
+    width: 100%;
+    margin: 1.2em;
+}
+
+section ul{
+    color: rgb(0, 0, 0);
+    list-style: square;
+    font-size: 2em;
+    
+}
+
+section ul li::marker{
+    color: rgb(216, 111, 216);
+}
+
+form label{
+    font-size: 1.8em;
+}
+
+/* Estilos del contenedor aside para las recetas y tecnicas */
+aside {
+	flex-basis: 50%;
+    margin: 1em;
+}
+
+aside img{
+	width: 18.25em;
+    height: 18.25em;
+    margin: 0.8em;
+}
+
+
+/* Estilos del footer*/
+footer {
+    width: 100%;
+    background-color: rgba(212, 212, 212, 0.808);
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.8em;
+}
